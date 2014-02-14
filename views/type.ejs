@@ -1,0 +1,36 @@
+<!doctype html>
+<html ng-app="<%=app%>">
+<head>
+    <title><%=app%>-<%=key%></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body style="margin: 6px;" ng-controller="main">
+<div ng-controller="<%=key%>">
+    <div class="container">
+    <form role="form" class="form-inline ng-scope ng-valid ng-dirty">
+        <div class="form-group">
+            <div class="row">
+                <label>表名:</label>
+                <input type="text" placeholder="表名" ng-model="name" class="form-control ng-valid ng-dirty">
+                <button class="btn btn-default" ng-click="add()">添加</button>
+            </div>
+
+            <div class="row">
+                列表
+            </div>
+        </div>
+    </form>
+    </div>
+</div>
+<div ng-controller="alert" style="position:fixed;bottom:0px; width: 99%;">
+    <alert ng-repeat="alert in alerts" type="alert.type" close="closeAlert($index)">{{alert.msg}}</alert>
+</div>
+<script src="/bower_components/jquery/jquery.min.js"></script>
+<script src="/bower_components/angular/angular.js"></script>
+<script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="/bower_components/angular-route/angular-route.min.js"></script>
+<script src="/bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+<script src="/scripts/angular/type.js"></script>
+</body>
+</html>

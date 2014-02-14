@@ -1,0 +1,25 @@
+{
+  "name": "nodejs1",
+  "version": "0.0.1",
+  "dependencies": {
+    "angular": "*",
+    "bootstrap": "*",
+      "angular-bootstrap":"*",
+      "angular-route":"*",
+      "hogan":"*"
+  },
+  "authors": [
+    "285858315 <285858315@qq.com>"
+  ],
+  "description": "nodejs1",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/bower_components",
+    "test",
+    "tests"
+  ]
+}
